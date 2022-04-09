@@ -1,0 +1,29 @@
+* {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    display: flex;
+    position: relative;
+    margin: .5rem 0;
+}
+img {
+    max-width: 100%;
+    object-fit: contain;
+}
+
+.container {
+    margin: auto;
+    position: relative;
+}
+h3{
+    margin: 10px;
+}

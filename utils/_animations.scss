@@ -1,0 +1,55 @@
+/*loader*/
+.loader {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.9);
+    z-index: 10000;
+    -webkit-animation: hide-spinner 3s 1;
+            animation: hide-spinner 3s 1;
+    visibility: hidden;
+  }
+  
+  .loader .loader-circle {
+    border: 10px solid $color-primary;
+    border-top: 10px solid $color-tertiary;
+    border-bottom: 10px solid $color-secondary;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    -webkit-animation: spin linear 1.5s 2;
+            animation: spin linear 1.5s 2;
+  }
+
+  .favoriteIcon {
+    cursor: pointer;
+    opacity: 0%;
+    background: linear-gradient(162deg, $color-secondary 0%, $color-primary 100%);
+      background-clip: border-box;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    grid-area: 1/2;
+    transition: opacity 0.3s ease-in-out;
+    position: relative;
+    &:hover {
+    opacity: 100%;
+  }
+
+  .addFavoriteIcon {
+    cursor: pointer;
+    grid-area: 1/2;
+    transition: color 0.2s ease-in-out;
+  }
+  .card__heart {
+    display: grid;
+    justify-content: end;
+    margin: 10px;
+    padding: 5px;
+  }

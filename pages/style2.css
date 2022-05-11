@@ -253,12 +253,10 @@ h4 {
   cursor: pointer;
   transition: 0.2s ease-in-out;
 }
-
 .cmd_button:hover {
   filter: brightness(1.1);
   box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
 }
-
 /* Footer */
 .footer {
   padding: 1rem;
@@ -266,14 +264,12 @@ h4 {
   display: flex;
   flex-direction: column;
 }
-
 .omf__titre {
   font-family: 'Shrikhand', "cursive";
   font-size: 1.2rem;
   margin: 0 0 1rem;
   color: #fff;
 }
-
 .footer a {
   text-decoration: none;
   color: white;

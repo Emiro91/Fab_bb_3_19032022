@@ -1,0 +1,57 @@
+.rounded-list .number {
+    background: #9356dc;
+    color: white;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    position: absolute;
+    left: -1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .rounded-list {
+    background: #f6f6f6;
+    padding: 15px;
+    box-shadow: rgba(50, 50, 93, 0) 0px 5px 20px 0px, rgba(0, 0, 0, 0.3) -1px 5px 30px -10px;
+    border-radius: 2rem;
+    margin-left: 1.5rem;
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+  }
+  
+  .rounded-list:hover {
+    background-color: lightgrey;
+  }
+  .rounded-list:hover .iconcolor{
+      color: #9356dc;
+  }
+  
+  .cards-fonctionnement {
+    display: grid;
+    row-gap: 2rem;
+  }
+  
+  .fonctionnement {
+    padding: 0px 35px;
+    margin: 10px 8px 50px;
+  }
+  
+  @media (max-width: 650px) {
+    .fonctionnement {
+      padding: inherit;
+    }
+  }
+  .fonctionnement .container {
+    width: 75%;
+  }
+  
+  @media (min-width: 650px) {
+    .cards-fonctionnement {
+      grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+      column-gap: 2rem;
+    }
+  }

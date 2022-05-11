@@ -1,0 +1,45 @@
+.loader {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.9);
+    z-index: 10000;
+    -webkit-animation: hide-spinner 3s 1;
+            animation: hide-spinner 3s 1;
+    visibility: hidden;
+  }
+  
+  .loader-circle {
+    border: 10px solid #9356dc;
+    border-top: 10px solid #99e2d0;
+    border-bottom: 10px solid #ff79da;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    -webkit-animation: spin linear 1.5s 2;
+            animation: spin linear 1.5s 2;
+  }
+  @keyframes spin{
+        0% {
+            -webkit-transform: rotate(0deg);
+        }
+        100% {
+            -webkit-transform: rotate(360deg);
+        }
+    }
+       
+    @keyframes hide-spinner {
+    0% {
+        visibility: visible;
+      }
+      100% {
+        visibility: hidden;
+      }
+    }
+    

@@ -1,0 +1,346 @@
+/*loader*/
+.loader {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.9);
+  z-index: 10000;
+  -webkit-animation: hide-spinner 3s 1;
+  animation: hide-spinner 3s 1;
+  visibility: hidden;
+}
+
+.loader .loader-circle {
+  border: 10px solid #9356DC;
+  border-top: 10px solid #99E2D0;
+  border-bottom: 10px solid #FF79DA;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  -webkit-animation: spin linear 1.5s 2;
+  animation: spin linear 1.5s 2;
+}
+
+.favoriteIcon {
+  cursor: pointer;
+  opacity: 0%;
+  background: linear-gradient(162deg, #FF79DA 0%, #9356DC 100%);
+  background-clip: border-box;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  grid-area: 1/2;
+  transition: opacity 0.3s ease-in-out;
+  position: relative;
+}
+.favoriteIcon:hover {
+  opacity: 100%;
+}
+
+.addFavoriteIcon {
+  cursor: pointer;
+  grid-area: 1/2;
+  transition: color 0.2s ease-in-out;
+}
+
+.card__heart {
+  display: grid;
+  justify-content: end;
+  margin: 10px;
+  padding: 5px;
+}
+
+body {
+  margin: 0px;
+}
+
+body, html {
+  font-family: "Roboto";
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+h1 {
+  text-align: center;
+  color: black;
+  font-family: Shrikhand, "cursive";
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  display: flex;
+  position: relative;
+  margin: 0.5rem 0;
+}
+
+img {
+  max-width: 100%;
+  object-fit: contain;
+}
+
+.loader {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.9);
+  z-index: 10000;
+  -webkit-animation: hide-spinner 3s 1;
+  animation: hide-spinner 3s 1;
+  visibility: hidden;
+}
+
+.loader-circle {
+  border: 10px solid #9356dc;
+  border-top: 10px solid #99e2d0;
+  border-bottom: 10px solid #ff79da;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  -webkit-animation: spin linear 1.5s 2;
+  animation: spin linear 1.5s 2;
+}
+
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@keyframes hide-spinner {
+  0% {
+    visibility: visible;
+  }
+  100% {
+    visibility: hidden;
+  }
+}
+.location {
+  background: #f3f3f3;
+  font-size: 1rem;
+  padding: 20px 5px;
+  text-align: center;
+  gap: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-shadow: inset 0 20px 20px -20px rgba(190, 183, 183, 0.8);
+  box-shadow: inset 0 20px 20px -20px rgba(190, 183, 183, 0.8);
+}
+
+.info {
+  background: #f3f3f3;
+  background-color: #f3f3f3;
+  font-size: 1rem;
+  padding: 20px 5px;
+  text-align: center;
+  background-color: #fafafa;
+}
+
+.btn__explore {
+  padding: 1rem 1.5rem;
+  font-size: 1.1rem;
+  color: #fff;
+  cursor: pointer;
+  box-shadow: 0.25rem 0.25rem 10px #00000045;
+  border-radius: 5rem;
+  background: #686868 linear-gradient(0deg, rgba(147, 86, 220, 0.9), rgba(255, 121, 218, 0.9));
+  display: block;
+  max-width: 17rem;
+  margin: 2rem auto 6rem;
+}
+.btn__explore:hover {
+  background-color: #fff;
+  box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.5);
+}
+
+.rounded-list .number {
+  background: #9356dc;
+  color: white;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  position: absolute;
+  left: -1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.rounded-list {
+  background: #f6f6f6;
+  padding: 15px;
+  box-shadow: rgba(50, 50, 93, 0) 0px 5px 20px 0px, rgba(0, 0, 0, 0.3) -1px 5px 30px -10px;
+  border-radius: 2rem;
+  margin-left: 1.5rem;
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.rounded-list:hover {
+  background-color: lightgrey;
+}
+
+.rounded-list:hover .iconcolor {
+  color: #9356dc;
+}
+
+.cards-fonctionnement {
+  display: grid;
+  row-gap: 2rem;
+}
+
+.fonctionnement {
+  padding: 0px 35px;
+  margin: 10px 8px 50px;
+}
+
+@media (max-width: 650px) {
+  .fonctionnement {
+    padding: inherit;
+  }
+}
+.fonctionnement .container {
+  width: 75%;
+}
+
+@media (min-width: 650px) {
+  .cards-fonctionnement {
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    column-gap: 2rem;
+  }
+}
+.restaurants {
+  background: #f6f6f6;
+  padding: 20px 35px;
+}
+
+.restaurants .container {
+  width: 85%;
+}
+
+.cards {
+  display: -ms-grid;
+  display: grid;
+  gap: 70px;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  margin: 10px;
+}
+
+.card__badge--new {
+  background-color: #99e2d0;
+  color: #1b6150;
+  padding: 0.5rem;
+  border-radius: 0.125rem;
+  position: absolute;
+  top: 1rem;
+  right: 0.75rem;
+}
+
+.card {
+  background: #fff;
+  border-radius: 1rem;
+  position: relative;
+  display: block;
+  margin: 0.5rem 0;
+  box-shadow: 0.25rem 0.25rem 0.5rem #00000012;
+}
+
+.card__text {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+}
+
+.card img {
+  width: 100%;
+  height: 12rem;
+  border-radius: 1rem 1rem 0 0;
+  box-shadow: none;
+  object-fit: cover;
+}
+
+.material-icons {
+  font-family: "Material Icons";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -moz-font-feature-settings: "liga";
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@media (max-width: 650px) {
+  .restaurants {
+    display: grid;
+    grid-template-columns: 100px;
+  }
+}
+/* Header */
+.header {
+  display: flex;
+  justify-content: center;
+}
+
+.header_logo {
+  max-width: 10rem;
+}
+
+.footer {
+  padding: 1rem;
+  background-color: #383838;
+  display: flex;
+  flex-direction: column;
+}
+
+.omf__titre {
+  font-family: "Shrikhand", "cursive";
+  font-size: 1.2rem;
+  margin: 0 0 1rem;
+  color: #fff;
+}
+
+.footer a {
+  text-decoration: none;
+  color: white;
+}
+
+.footer__icon {
+  width: 1.2rem;
+  margin-right: 0.5rem;
+}
+
+/*# sourceMappingURL=style.css.map */

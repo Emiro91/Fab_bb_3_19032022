@@ -205,7 +205,6 @@
   }
   #main-menu #contenu-menu article .check-icon-box .check-icon i {
     color: #99e2d0;
-    margin-left: 10px;
   }
   #main-menu #contenu-menu article:hover .check-icon-box .check-icon {
     -webkit-transform: rotate(0deg);
@@ -242,7 +241,6 @@
   
   .cmd_button {
     color: white;
-    padding: 0.5rem 3rem;
     text-align: center;
     background: #ff79da;
     background: linear-gradient(162deg, #ff79da 0%, #9356dc 100%);
@@ -253,6 +251,8 @@
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     cursor: pointer;
     transition: 0.2s ease-in-out;
+    padding: 1rem 1.5rem;
+    font-size: 1.1rem;
   }
   .cmd_button:hover {
     filter: brightness(1.1);

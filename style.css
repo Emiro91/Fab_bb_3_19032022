@@ -203,6 +203,7 @@ img {
   display: flex;
   align-items: center;
   gap: 2rem;
+  height: 70px;
 }
 
 .rounded-list:hover {
@@ -304,12 +305,6 @@ img {
   -moz-osx-font-smoothing: grayscale;
 }
 
-@media (max-width: 650px) {
-  .restaurants {
-    display: grid;
-    grid-template-columns: 100px;
-  }
-}
 * {
   box-sizing: border-box;
 }
@@ -520,7 +515,6 @@ h4 {
 
 #main-menu #contenu-menu article .check-icon-box .check-icon i {
   color: #99e2d0;
-  margin-left: 10px;
 }
 
 #main-menu #contenu-menu article:hover .check-icon-box .check-icon {
@@ -556,7 +550,6 @@ h4 {
 /* bouton commander */
 .cmd_button {
   color: white;
-  padding: 0.5rem 3rem;
   text-align: center;
   background: #ff79da;
   background: linear-gradient(162deg, #ff79da 0%, #9356dc 100%);
@@ -567,6 +560,8 @@ h4 {
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   cursor: pointer;
   transition: 0.2s ease-in-out;
+  padding: 1rem 1.5rem;
+  font-size: 1.1rem;
 }
 
 .cmd_button:hover {
@@ -606,6 +601,10 @@ h4 {
 .footer__icon {
   width: 1.2rem;
   margin-right: 0.5rem;
+}
+
+.fas {
+  margin: 5px;
 }
 
 /*# sourceMappingURL=style.css.map */

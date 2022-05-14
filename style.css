@@ -569,6 +569,32 @@ h4 {
   box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px 5px;
 }
 
+.delay-0 {
+  animation: slideup 1s forwards;
+}
+
+.delay-1 {
+  animation: slideup 1.5s forwards;
+}
+
+.delay-2 {
+  animation: slideup 2s forwards;
+}
+
+.delay-3 {
+  animation: slideup 2.5s forwards;
+}
+
+@-webkit-keyframes slideup {
+  0% {
+    transform: translatey(20px);
+    opacity: 0%;
+  }
+  100% {
+    transform: translatey(0px);
+    opacity: 100%;
+  }
+}
 /* Header */
 .header {
   display: flex;

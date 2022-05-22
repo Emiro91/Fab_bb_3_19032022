@@ -12,6 +12,24 @@
     grid-template-columns: repeat(auto-fill,minmax(250px,1fr));
     margin: 10px;
 }
+@media (min-width: 3840px) {
+.cards {
+  display: -ms-grid;
+  display: grid;
+  gap: 70px;
+  grid-template-columns: repeat(auto-fill, minmax(1841px, 1fr));
+  margin: 10px;
+}
+}
+@media (min-width: 1080px) and (max-width:3839px) {
+   .cards {
+    display: -ms-grid;
+    display: grid;
+    gap: 70px;
+    grid-template-columns: repeat(auto-fill, minmax(315px, 1fr));
+    margin: 10px;}
+  }
+
 .card__badge--new{
     background-color: #99e2d0;
     color: #1b6150;

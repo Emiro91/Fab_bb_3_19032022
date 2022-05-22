@@ -208,6 +208,7 @@ img {
 
 .rounded-list:hover {
   background-color: #e1b5ff;
+  cursor: pointer;
 }
 
 .rounded-list:hover .iconcolor {
@@ -217,28 +218,19 @@ img {
 .cards-fonctionnement {
   display: grid;
   row-gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  column-gap: 2rem;
 }
 
 .fonctionnement {
   padding: 0px 35px;
-  margin: 10px 8px 50px;
+  margin: 40px 0px 50px;
 }
 
-@media (max-width: 650px) {
-  .fonctionnement {
-    padding: inherit;
-  }
-}
 .fonctionnement .container {
   width: 75%;
 }
 
-@media (min-width: 650px) {
-  .cards-fonctionnement {
-    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
-    column-gap: 2rem;
-  }
-}
 .restaurants {
   background: #f6f6f6;
   padding: 20px 35px;
@@ -256,6 +248,24 @@ img {
   margin: 10px;
 }
 
+@media (min-width: 3840px) {
+  .cards {
+    display: -ms-grid;
+    display: grid;
+    gap: 70px;
+    grid-template-columns: repeat(auto-fill, minmax(1841px, 1fr));
+    margin: 10px;
+  }
+}
+@media (min-width: 1080px) and (max-width: 3839px) {
+  .cards {
+    display: -ms-grid;
+    display: grid;
+    gap: 70px;
+    grid-template-columns: repeat(auto-fill, minmax(315px, 1fr));
+    margin: 10px;
+  }
+}
 .card__badge--new {
   background-color: #99e2d0;
   color: #1b6150;
